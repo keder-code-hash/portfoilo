@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.navbar{
+  background-color:rgb(203, 233, 233);
+  border-radius: 20px;
+  margin-top: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+
+  height: 10%;
+
+  font-weight: 700;
+  font-size: large;
+  float: inline-start;
+  
+  size: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navContainer{
+  padding: 4px;
+  margin: 1px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.nav-item{
+  
+  margin-right: 1px;
+  margin-left:2px
+}
+.navbar-nav{
+  padding-left: 15px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar{
+  -webkit-box-shadow: 0 12px 18px -6px rgb(7, 85, 148);
+     -moz-box-shadow: 0 12px 18px -6px rgb(7, 85, 148);
+          box-shadow: 0 12px 18px -6px rgb(7, 85, 148);
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.fontStyle{
+  font-weight: 800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.descFont{
+  font-weight: normal;
+  font-size: large;
+}
+
+.card{
+  border: none;
+  box-shadow: 2px;
+}
+.imgBody{
 }
