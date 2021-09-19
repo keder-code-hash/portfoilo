@@ -2,7 +2,7 @@ import React from 'react';
 import "../SASS/skill.scss"
 
 
-
+//technologies,framework,language
 const FrontEnd=[
     {
         id:1,
@@ -25,6 +25,26 @@ const FrontEnd=[
         skillVal:70
     }
 ]
+//technologies,framework
+const Backend=[
+    {
+        id:5,
+        name:"NODEJS",
+        skillVal:70
+    },
+    {
+        id:6,
+        name:"DJANGO",
+        skillVal:75
+    },
+    {
+        id:7,
+        name:"EXPRESS.JS(framework)",
+        skillVal:80
+    }
+]
+
+
 
 const percentToDeg=(percent)=>{
     return ((percent/100) * 360);
@@ -50,7 +70,7 @@ function GenerateCircle(val){
 
 function GenCardComp(props) {
     const content = props.skills.map((skill) =>
-        <div className="col-lg-4 col-md-4 col-xl-3 py-2 px-1" key={skill.id}>
+        <div className="col-lg-4 col-md-4 col-xl-3 py-2 px-2" key={skill.id}>
             <div className="card px-0 py-0 skillCard">
                 <div className="card-body ">
                     <div class="progress mx-auto" data-value='90'>
@@ -73,7 +93,7 @@ function GenCardComp(props) {
         </div>
     );
     return (
-      <div className="row">
+      <div className="row py-2">
         {content}
       </div>
     );
@@ -84,10 +104,25 @@ function SkillExp(params) {
     return(
         <React.Fragment>
             <div className="container col-xxl-10 py-4 px-2">
-                <h1 className="display-4 ">Skills & Experiences</h1>
+                <h1 className="display-4 text-center">Skills & Experiences</h1>
                 <br></br>
+                <br></br>
+                <span>
+                    <p className="display-4">WEB DEVELOPMENT</p>
+                </span>
+                <br></br>
+                <br></br>
+                <span>
+                    <h5 className="text-center">FrontEnd</h5>
+                </span>
                 <br></br>
                 <GenCardComp skills={FrontEnd}/>
+                <br></br>
+                <span>
+                    <h5 className="text-center">Backend</h5>
+                </span>
+                <br></br>
+                <GenCardComp skills={Backend}/>
             </div>
         </React.Fragment>
     );   
