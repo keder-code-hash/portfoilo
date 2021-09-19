@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/navbar';
 import Home from './components/mainLandingSec';
 import ProjectDet from './components/projects';
+import SkillExp from './components/skillAndExperience';
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <section>
           <ProjectDet/>
         </section>
+        <hr></hr>
+        <SkillExp/>
       </div>
   );
 }

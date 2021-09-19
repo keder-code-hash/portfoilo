@@ -1,7 +1,7 @@
 
 .projCard {
     position: relative;
-    width: 350px;
+    width: 100%;
     height: 400px;
     margin: 0 auto;
     background: #000;
@@ -65,8 +65,8 @@
   .projCard:nth-child(1) .face.face2 {
     background-image: linear-gradient(
       60deg,
-      #fffc00 10%,
-      #fc00ff 20%,
+      #00eaff69 10%,
+      #1a8deb 20%,
       #00fffc 100%
     );
     border-radius: 15px;
