@@ -21,7 +21,7 @@ const proj=[
 
 function Cards(props) {
     const content = props.projs.map((post) =>
-        <div className="col-md-4 px-1 m-1 py-2" key={post.project_id}>
+        <div className="col-lg-4 col-md-4 col-xl-3 py-2 px-1 m-1 py-2" key={post.project_id}>
             <div className="projCard">
                 <div className="face face1">
                     <div className="content card-body">
