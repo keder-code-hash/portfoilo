@@ -4,6 +4,7 @@ import Navbar from './components/navbar';
 import Home from './components/mainLandingSec';
 import ProjectDet from './components/projects';
 import SkillExp from './components/skillAndExperience';
+import CreateAboutMe from './components/AboutMe';
 
 
 function App() {
@@ -21,7 +22,12 @@ function App() {
           <ProjectDet/>
         </section>
         {/* <hr></hr> */}
-        <SkillExp/>
+        <section>
+          <SkillExp/>
+        </section>
+        <section>
+          <CreateAboutMe/>
+        </section>
       </div>
   );
 }
