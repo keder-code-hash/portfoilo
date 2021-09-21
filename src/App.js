@@ -13,11 +13,14 @@ function App() {
         <section>
           <Home/>
         </section>
-        <hr></hr>
+        <br/>
+        <br/>
+        <br/>
+        {/* <hr></hr> */}
         <section>
           <ProjectDet/>
         </section>
-        <hr></hr>
+        {/* <hr></hr> */}
         <SkillExp/>
       </div>
   );

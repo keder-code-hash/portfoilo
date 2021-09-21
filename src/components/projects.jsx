@@ -59,7 +59,7 @@ function Cards(props) {
 
     );
     return (
-      <div className="container-fluid mx-3 px-0 py-4 rowParent">
+      <div className="container-fluid mx-3 px-0 py-2 rowParent">
         {content}
       </div>
     );
@@ -71,13 +71,12 @@ function ProjectDet(){
     return(
         <React.Fragment>
             <div className="container col-xxl-10 px-2 py-5">
-                <h1 className="text-center display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
+                <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
                     <a style={{ backgroundColor:"#d4bdfb"}}>
-                        My Projects
+                       01. My Projects
+                       <div className="dividor"></div>
                     </a>
                 </h1>
-                <br></br>
-                <br></br>
                 <Cards projs={proj}/>
             </div>
         </React.Fragment>
