@@ -51,7 +51,7 @@ const Languages=[
         skillVal:75
     },
     {
-        id:9,
+        id:19,
         name:"C++",
         skillVal:70
     },
@@ -73,7 +73,7 @@ const DataBases=[
         skillVal:85
     },
     {
-        id:10,
+        id:12,
         name:"NOSQL",
         skillVal:75
     },
@@ -133,6 +133,27 @@ function GenCardComp(props) {
     );
   }
 
+
+function GenContainer(props){
+    const cName=props.containerName;
+    const name="container col-xxl-10  py-2 px-0"+cName;
+    const container=
+            <div className={name}>
+                <span>
+                    <h5 className="text-center">{props.conatinerName}</h5>
+                </span>
+                <br></br>
+                <GenCardComp skills={props.containerName}/>
+                <br></br>
+            </div>
+    return(
+        <div>
+            {container}
+        </div>
+    )
+  }
+
+
 const initButtonStyle={
     "border-radius":"15px"
 }
@@ -148,29 +169,69 @@ function handleFilter(ev){
 }
 
 function SkillExp() {
-    var skillObj=new Array('display','none','display','none');
+    var skillObj=new Array('ds','ds','s','ds');
     const [filter,setFilter]=useState(skillObj);
+    const [container,SetContainer]=useState(Backend);
+
 
     function handleFilter(ev){
-        // console.log(ev.target.className);
+        SetContainer(null);
+        // console.log(ev.target.style.backgroundColor);
         const property=ev.target.className;
         if(property==='frontEnd'){
-            const newObj=['display','none','display','none']
-            setFilter(newObj);
+            
+            SetContainer(FrontEnd);
+            const newFilter=filter;
+            if(filter[0]==='ds'){
+                console.log("select");
+                newFilter[0]='s';
+                setFilter(newFilter);
+            }
+            else if(filter[0]==='s'){
+                console.log("deselect");
+                newFilter[0]='ds';
+                setFilter(newFilter);
+            }
+             
         }
         if(property==='backEnd'){
-            const newObj=['display','display','display','none']
-            setFilter(newObj);
+            SetContainer(Backend);
+            const newFilter=filter;
+            if(filter[1]==='s'){
+                console.log("deselect");
+                newFilter[1]='ds';
+                setFilter(newFilter);
+            }
+            else if(filter[1]==='ds'){
+                console.log("select");
+                newFilter[1]='s';
+                setFilter(newFilter);
+            }
         }
         if(property==='languages'){
-            const newObj=['display','display','display','none']
-            setFilter(newObj);
+            SetContainer(Languages);
+            const newFilter=filter;
+            if(filter[2]==='s'){
+                newFilter[2]='ds';
+                setFilter(newFilter);
+            }
+            else if(filter[2]==='ds'){
+                newFilter[2]='s';
+                setFilter(newFilter);
+            }
         }
         if(property==='database'){
-            const newObj=['display','display','display','display']
-            setFilter(newObj);
+            SetContainer(DataBases);
+            const newFilter=filter;
+            if(filter[3]==='s'){
+                newFilter[3]='ds';
+                setFilter(newFilter);
+            }
+            else if(filter[3]==='ds'){
+                newFilter[3]='s';
+                setFilter(newFilter);
+            }
         }
-        console.log(filter[0]);
     }
 
     
@@ -180,61 +241,33 @@ function SkillExp() {
             <br></br>
             <br></br>
             <div className="container col-xxl-10 py-4 px-2">
-                <span >
-                    <ul className="buttonList">
-                        <li style={listStyle} key={20} >
-                            <button className="frontEnd" onClick={(e)=>handleFilter(e)}>FRONTEND</button>
-                        </li>
-                        <li style={listStyle} key={21} >
-                            <button className="backEnd" onClick={(e)=>handleFilter(e)}>BACKEND</button>
-                        </li>
-                        <li style={listStyle} key={22} >
-                            <button className="languages" onClick={(e)=>handleFilter(e)}>LANGUAGES</button>
-                        </li>
-                        <li style={listStyle} key={23} >
-                            <button className="database" onClick={(e)=>handleFilter(e)}>DATABASE</button>
-                        </li>
-                        <li style={listStyle} key={24} >
-                            <button onClick={(e)=>handleFilter(e)}>FRAMEWORK</button>
-                        </li>
-                    </ul>
-                </span>
-                {/* <span>
-                    <p className="display-4">WEB DEVELOPMENT</p>
-                </span>*/}
-                <br></br>
-                <br></br> 
-                <div className="frontEnd container col-xxl-10 py-2 px-0">
-                    <span>
-                        <h5 className="text-center">FrontEnd</h5>
-                    </span>
-                    <br></br>
-                    <GenCardComp skills={FrontEnd}/>
-                    <br></br>
+                <div className="row row-justify-content-center" style={{width:"100%",textAlign:"center"}}>
+                    <div className="col-lg-12 col-md-12 col-sm-12">
+                        <span >
+                            <ul className="buttonList">
+                                <li style={listStyle} key={20} >
+                                    <button id="btn" className="frontEnd"  onClick={(e)=>handleFilter(e)} >FRONTEND</button>
+                                </li>
+                                <li style={listStyle} key={21} >
+                                    <button id="btn"  className="backEnd" onClick={(e)=>handleFilter(e)} >BACKEND</button>
+                                </li>
+                                <li style={listStyle} key={22} >
+                                    <button  id="btn" className="languages" onClick={(e)=>handleFilter(e)} >LANGUAGES</button>
+                                </li>
+                                <li style={listStyle} key={23} >
+                                    <button  id="btn" className="database" onClick={(e)=>handleFilter(e)} >DATABASE</button>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
                 </div>
-                <div className="backEnd container col-xxl-10  py-2 px-0">
-                    <span>
-                        <h5 className="text-center">Backend</h5>
-                    </span>
-                    <br></br>
-                    <GenCardComp skills={Backend} />
-                    <br></br>
-                </div>
-                <div className="Languages container col-xxl-10  py-2 px-0">
-                    <span>
-                        <h5 className="text-center">Languages</h5>
-                    </span>
-                    <br></br>
-                    <GenCardComp skills={Languages}/>
-                    <br></br>
-                </div>
-                <div className="DataBases container col-xxl-10  py-2 px-0">
-                    <span>
-                        <h5 className="text-center">Database</h5>
-                    </span>
-                    <br></br>
-                    <GenCardComp skills={DataBases}/>
-                    <br></br>
+                <div className="row row-justify-content-center" style={{width:"100%",textAlign:"center"}}>
+                    <div className="col-lg-12 col-md-12 col-sm-12">
+                        
+                        <br></br>
+                        <br></br> 
+                        <GenContainer containerName={container}/>
+                    </div>
                 </div>
             </div>
         </React.Fragment>

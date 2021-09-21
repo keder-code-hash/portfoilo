@@ -90,7 +90,6 @@
     border-radius: 15px;
     padding: 15px 32px;
     text-align: center;
-    background-color: rgb(153, 174, 233);
     display: inline-block;
     text-decoration: none;
     margin: 4px 2px;
@@ -104,17 +103,23 @@ ul.buttonList li{
 }
 
 
-// .frontEnd{
-//   display: block;
-// }
-// .backEnd{
-//   display: none;
-// }
+#btn{
+  padding: .5rem 2rem;
+  background-color: rgb(153, 174, 233);
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  transition: all 0.4s cubic-bezier(1,-0.16,.6,1.35);
+}
 
-// .Languages{
-//   display: none;
-// }
 
-// .DataBases{
-//   display: inline-block;
-// }
+#btn:hover{
+  background-color: #037FFf;
+  cursor: pointer;
+}
+
+#btn:active, #btn:focus{
+  outline: none;
+  border: none;
+}
