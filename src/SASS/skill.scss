@@ -81,3 +81,40 @@
     top: 0;
     left: 0;
   }
+
+
+
+
+
+  ul.buttonList li button{
+    border-radius: 15px;
+    padding: 15px 32px;
+    text-align: center;
+    background-color: rgb(153, 174, 233);
+    display: inline-block;
+    text-decoration: none;
+    margin: 4px 2px;
+    text-shadow:paleturquoise;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+ul.buttonList li{
+  display: inline;
+}
+
+
+// .frontEnd{
+//   display: block;
+// }
+// .backEnd{
+//   display: none;
+// }
+
+// .Languages{
+//   display: none;
+// }
+
+// .DataBases{
+//   display: inline-block;
+// }

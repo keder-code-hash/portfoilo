@@ -1,4 +1,5 @@
-import React from 'react';
+import { display } from '@mui/system';
+import React, { useState } from 'react';
 import "../SASS/skill.scss"
 
 
@@ -43,7 +44,40 @@ const Backend=[
         skillVal:80
     }
 ]
-
+const Languages=[
+    {
+        id:8,
+        name:"C",
+        skillVal:75
+    },
+    {
+        id:9,
+        name:"C++",
+        skillVal:70
+    },
+    {
+        id:9,
+        name:"python",
+        skillVal:80
+    },
+    {
+        id:10,
+        name:"JAVA",
+        skillVal:70
+    },
+]
+const DataBases=[
+    {
+        id:11,
+        name:"SQL",
+        skillVal:85
+    },
+    {
+        id:10,
+        name:"NOSQL",
+        skillVal:75
+    },
+]
 
 
 const percentToDeg=(percent)=>{
@@ -99,30 +133,109 @@ function GenCardComp(props) {
     );
   }
 
-function SkillExp(params) {
+const initButtonStyle={
+    "border-radius":"15px"
+}
+const listStyle={
+    "list-style-type": "none",
+    "padding": "5px"
+}
+
+
+function handleFilter(ev){
+    console.log(ev.target.className);
+    // console.log)
+}
+
+function SkillExp() {
+    var skillObj=new Array('display','none','display','none');
+    const [filter,setFilter]=useState(skillObj);
+
+    function handleFilter(ev){
+        // console.log(ev.target.className);
+        const property=ev.target.className;
+        if(property==='frontEnd'){
+            const newObj=['display','none','display','none']
+            setFilter(newObj);
+        }
+        if(property==='backEnd'){
+            const newObj=['display','display','display','none']
+            setFilter(newObj);
+        }
+        if(property==='languages'){
+            const newObj=['display','display','display','none']
+            setFilter(newObj);
+        }
+        if(property==='database'){
+            const newObj=['display','display','display','display']
+            setFilter(newObj);
+        }
+        console.log(filter[0]);
+    }
+
     
     return(
         <React.Fragment>
+            <h1 className="display-4 text-center">Skills & Experiences</h1>
+            <br></br>
+            <br></br>
             <div className="container col-xxl-10 py-4 px-2">
-                <h1 className="display-4 text-center">Skills & Experiences</h1>
-                <br></br>
-                <br></br>
-                <span>
+                <span >
+                    <ul className="buttonList">
+                        <li style={listStyle} key={20} >
+                            <button className="frontEnd" onClick={(e)=>handleFilter(e)}>FRONTEND</button>
+                        </li>
+                        <li style={listStyle} key={21} >
+                            <button className="backEnd" onClick={(e)=>handleFilter(e)}>BACKEND</button>
+                        </li>
+                        <li style={listStyle} key={22} >
+                            <button className="languages" onClick={(e)=>handleFilter(e)}>LANGUAGES</button>
+                        </li>
+                        <li style={listStyle} key={23} >
+                            <button className="database" onClick={(e)=>handleFilter(e)}>DATABASE</button>
+                        </li>
+                        <li style={listStyle} key={24} >
+                            <button onClick={(e)=>handleFilter(e)}>FRAMEWORK</button>
+                        </li>
+                    </ul>
+                </span>
+                {/* <span>
                     <p className="display-4">WEB DEVELOPMENT</p>
-                </span>
+                </span>*/}
                 <br></br>
-                <br></br>
-                <span>
-                    <h5 className="text-center">FrontEnd</h5>
-                </span>
-                <br></br>
-                <GenCardComp skills={FrontEnd}/>
-                <br></br>
-                <span>
-                    <h5 className="text-center">Backend</h5>
-                </span>
-                <br></br>
-                <GenCardComp skills={Backend}/>
+                <br></br> 
+                <div className="frontEnd container col-xxl-10 py-2 px-0">
+                    <span>
+                        <h5 className="text-center">FrontEnd</h5>
+                    </span>
+                    <br></br>
+                    <GenCardComp skills={FrontEnd}/>
+                    <br></br>
+                </div>
+                <div className="backEnd container col-xxl-10  py-2 px-0">
+                    <span>
+                        <h5 className="text-center">Backend</h5>
+                    </span>
+                    <br></br>
+                    <GenCardComp skills={Backend} />
+                    <br></br>
+                </div>
+                <div className="Languages container col-xxl-10  py-2 px-0">
+                    <span>
+                        <h5 className="text-center">Languages</h5>
+                    </span>
+                    <br></br>
+                    <GenCardComp skills={Languages}/>
+                    <br></br>
+                </div>
+                <div className="DataBases container col-xxl-10  py-2 px-0">
+                    <span>
+                        <h5 className="text-center">Database</h5>
+                    </span>
+                    <br></br>
+                    <GenCardComp skills={DataBases}/>
+                    <br></br>
+                </div>
             </div>
         </React.Fragment>
     );   

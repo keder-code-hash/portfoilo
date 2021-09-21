@@ -11,8 +11,8 @@ function Home(){
                 <div className="container col-xxl-8 px-2 py-5">
                     <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
                         <div className="offset-lg-1 col-12 col-sm-10 col-lg-7">
-                            <div className="card p-0 m-0">
-                                <div className="card-body imgBody">
+                            <div className="p-0 m-0">
+                                <div className="imgBody">
                                     <img src={process.env.PUBLIC_URL+'illus.jpg'} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="100%" loading="lazy"/>
                                     <br></br>
                                     <br></br>
