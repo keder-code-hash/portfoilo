@@ -240,7 +240,7 @@ function SkillExp() {
             <div className="container col-xxl-10 py-4 px-2">
                 <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
                         <a style={{ backgroundColor:"inehrit"}}>
-                        02. Skills & Experiences
+                        03. Skills & Experiences
                         <div className="dividor"></div>
                         </a>
                 </h1>

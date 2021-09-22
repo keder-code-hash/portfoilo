@@ -19,14 +19,14 @@ function App() {
         <br/>
         {/* <hr></hr> */}
         <section>
+          <CreateAboutMe/>
+        </section>
+        <section>
           <ProjectDet/>
         </section>
         {/* <hr></hr> */}
         <section>
           <SkillExp/>
-        </section>
-        <section>
-          <CreateAboutMe/>
         </section>
       </div>
   );

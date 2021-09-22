@@ -1,0 +1,23 @@
+.imgCol picture img{
+    max-width: fit-content;
+    max-width: fit-content;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .imgCol ::shadow{
+    box-shadow: 0 8px 8px -4px powderblue;
+    transition: all 0.4s cubic-bezier(1,-0.16,.6,1.35);
+    transform: scale(20);
+  }
+//   .shadow :hover{
+//   }
+
+    #sh{
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+    }
+    #sh:hover{
+        top: -10px;
+    }

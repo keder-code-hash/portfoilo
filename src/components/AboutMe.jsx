@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import "../SASS/aboutMe.scss"
 
 function CreateAboutMe(){
     return (
@@ -7,7 +7,7 @@ function CreateAboutMe(){
             <div className="container col-xxl-10 py-4 px-2">
                 <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
                         <a style={{ backgroundColor:"inehrit"}}>
-                        02. About Me
+                        01. About Me
                         <div className="dividor"></div>
                         </a>
                 </h1>
@@ -26,12 +26,12 @@ function CreateAboutMe(){
                             Currently,I am trying to explore Machine Learning and web 3.0 . 
                         </p>
                     </div>
-                    <div className="col-lg-4 col-sm-4 col-sm-4 order-2">
-                        <div className="wrapper px-0 py-0">
+                    <div className="col-lg-4 col-sm-4 col-sm-4 order-2 imgCol">
+                        <div id="sh" className="shadow px-0 py-0">
                             <picture>
                                 <source media="(min-width:650px)" srcset="https://storage.pixteller.com/designs/designs-images/2017-09-20/08/twitter-profile-picture-avatar-1-59c1f99ecca45.png"/>
                                 <source media="(min-width:465px)" srcset={process.env.PUBLIC_URL+'myImage.jpg'}/>
-                                <img src="https://storage.pixteller.com/designs/designs-images/2017-09-20/08/twitter-profile-picture-avatar-1-59c1f99ecca45.png" alt="Flowers"  style={{height:"300px",width:"300px"}}/>
+                                <img src="https://storage.pixteller.com/designs/designs-images/2017-09-20/08/twitter-profile-picture-avatar-1-59c1f99ecca45.png" alt="Flowers"/>
                             </picture>
                         </div>
                     </div>
