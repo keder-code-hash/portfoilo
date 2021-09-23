@@ -15,13 +15,13 @@ function CreateAboutMe(){
                 <br></br>
                 <div className="row row-justify-content-center" style={{width:"100%",textAlign:"center"}}>
                     <div className="col-lg-8 col-sm-8 col-md-8 order-1">
-                        <p>
-
-                            Hello,<br/> I am kederNath Mallick from Pandooah and love to build the things from very basics.
+                        <p><h2 className="text-start py-0 ">Hello,</h2></p>
+                        <p className="lead text-center py-0">
+                             I am kederNath Mallick from Pandooah and love to build the things from very basics.
                             I am pretty much interested in Web-Development preferably at Backend.
                         </p>
-                        <p>
-                            Well-organized,hardworking person with depth knowledge about Web-Development and 
+                        <p className="lead">
+                            <mark style={{borderRadius:"15px",backgroundColor:"lightblue"}}>Well-organized,hardworking</mark> person with depth knowledge about Web-Development and 
                             still learning.Love to do work in a group.<br/>
                             Currently,I am trying to explore Machine Learning and web 3.0 . 
                         </p>
