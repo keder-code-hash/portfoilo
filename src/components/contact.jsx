@@ -15,7 +15,7 @@ const buttonStyle={
 function Contact(){
     return(
         <React.Fragment>
-            <div className="container col-xxl-10 py-4 px-2">
+            <div id="contact" className="container col-xxl-10 py-4 px-2">
                 <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
                         <a style={{ backgroundColor:"inehrit"}}>
                         04. Want To Contact

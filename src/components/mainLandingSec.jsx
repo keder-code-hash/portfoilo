@@ -7,7 +7,7 @@ import Paper from '@mui/material/Paper'
 function Home(){
     return (
         <React.Fragment>
-            <div className="container-fluid imgCont">
+            <div id="LandingSection" className="container-fluid imgCont">
                 <div className="container col-xxl-8 px-2 py-5">
                     <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
                         <div className="offset-lg-1 col-12 col-sm-10 col-lg-7">

@@ -6,10 +6,10 @@ import ProjectDet from './components/projects';
 import SkillExp from './components/skillAndExperience';
 import CreateAboutMe from './components/AboutMe';
 import Contact from './components/contact';
-
+import {BrowserRouter, Route,Switch} from 'react-router-dom'
 function App() {
   return (
-    <div className="App ">
+      <div className="App">
         <Navbar/>
         <section>
           <Home/>
@@ -17,14 +17,12 @@ function App() {
         <br/>
         <br/>
         <br/>
-        {/* <hr></hr> */}
         <section>
           <CreateAboutMe/>
         </section>
         <section>
           <ProjectDet/>
         </section>
-        {/* <hr></hr> */}
         <section>
           <SkillExp/>
         </section>

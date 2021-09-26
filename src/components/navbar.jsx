@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FormatAlignLeftIcon from '@mui/icons-material/FormatAlignCenter';
-import { Button } from '@mui/material';
+import {Link} from 'react-router-dom'
 
 
 function Navbar(){
@@ -14,17 +14,22 @@ function Navbar(){
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    &nbsp;
-                    <a class="nav-item nav-link" href="#">About Me</a> 
-                    &nbsp;
-                    <a class="nav-item nav-link" href="#">Skills</a>
-                    &nbsp;
-                    <a class="nav-item nav-link" href="#">Projects</a>
-                    &nbsp;
-                    <a class="nav-item nav-link " href="#">Contact</a>
-                    &nbsp;
+                    <div class="navbar-nav" style={{marginLeft:'auto',paddingRight:"5px"}}>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#LandingSection" >Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" >About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" >Skills</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#projects" >Projects</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contact" >Contact</a>
+                    </li>
                     </div>
                 </div>
                 </nav>

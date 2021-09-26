@@ -4,7 +4,7 @@ import "../SASS/aboutMe.scss"
 function CreateAboutMe(){
     return (
         <React.Fragment>
-            <div className="container col-xxl-10 py-4 px-2">
+            <div id="about" className="container col-xxl-10 py-4 px-2">
                 <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
                         <a style={{ backgroundColor:"inehrit"}}>
                         01. About Me
