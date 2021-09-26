@@ -5,7 +5,7 @@ import Home from './components/mainLandingSec';
 import ProjectDet from './components/projects';
 import SkillExp from './components/skillAndExperience';
 import CreateAboutMe from './components/AboutMe';
-
+import Contact from './components/contact';
 
 function App() {
   return (
@@ -27,6 +27,9 @@ function App() {
         {/* <hr></hr> */}
         <section>
           <SkillExp/>
+        </section>
+        <section>
+          <Contact/>
         </section>
       </div>
   );
