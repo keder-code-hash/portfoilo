@@ -14,22 +14,26 @@ function Navbar(){
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <li class="nav-item" style={{listStyleType:'none'}}>
+                            <a class="nav-link active" href="#LandingSection" >
+                                K 
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
                     <div class="navbar-nav" style={{marginLeft:'auto',paddingRight:"5px"}}>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#LandingSection" >Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" >About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills" >Skills</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#projects" >Projects</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#contact" >Contact</a>
-                    </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" >About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" >Skills</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#projects" >Work</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#contact" >Contact</a>
+                        </li>
                     </div>
                 </div>
                 </nav>

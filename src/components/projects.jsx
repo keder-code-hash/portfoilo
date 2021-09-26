@@ -72,7 +72,7 @@ function ProjectDet(){
         <React.Fragment>
             <div id="projects" className="container col-xxl-10 px-2 py-5">
                 <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
-                    <a style={{ backgroundColor:"#d4bdfb"}}>
+                    <a>
                        02. My Projects
                        <div className="dividor"></div>
                     </a>

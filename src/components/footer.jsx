@@ -2,8 +2,16 @@ import React, { Component } from 'react';
 
 
 
-function Header(){
+function Footer(){
     return(
-        <p className="text-center">Designed And Built By Keder</p>
+        <React.Fragment>
+            <div className="container col-xxl-10 py-4 px-2">
+                <br/>
+                <br/>
+                <p className="text-center">Designed And Built By Keder</p>
+            </div>
+        </React.Fragment>
     )
 }
+
+export default Footer
