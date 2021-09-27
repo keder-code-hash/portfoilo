@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FormatAlignLeftIcon from '@mui/icons-material/FormatAlignCenter';
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 
 
 function Navbar(){
@@ -26,10 +26,10 @@ function Navbar(){
                             <a class="nav-link" href="#about" >About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills" >Skills</a>
+                        <a class="nav-link" href="#projects" >Work</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#projects" >Work</a>
+                            <a class="nav-link" href="#skills" >Skills</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#contact" >Contact</a>

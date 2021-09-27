@@ -20,7 +20,9 @@ body {
 .navbar{
     /* background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%); */
 
-  background-color:bisque;
+  background-color:inherit;
+  /* box-shadow: 0 10px 30px -10px var(--navy-shadow); */
+  backdrop-filter: blur(20px);
   border-radius: 20px;
   /* margin-top: 1px; */
   margin-left: 1px;
@@ -62,11 +64,11 @@ body {
   padding-left: 15px !important;
 }
 
-/* .navbar{
+.navbar{
   -webkit-box-shadow: 0 12px 18px -6px rgb(7, 85, 148);
      -moz-box-shadow: 0 12px 18px -6px rgb(7, 85, 148);
           box-shadow: 0 12px 18px -6px rgb(7, 85, 148);
-} */
+}
 
 
 

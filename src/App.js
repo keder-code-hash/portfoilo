@@ -11,28 +11,41 @@ import Footer from './components/footer';
 function App() {
   return (
       <div className="App">
-        <Navbar/>
-        <section>
+        <Navbar/> 
+        <br/>
+        <section id="LandingSection" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
           <Home/>
         </section>
-        <br/>
-        <br/>
-        <br/>
-        <section>
+        <section  id="about" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
+          <br/>
+          <br/>
+          <br/>
           <CreateAboutMe/>
+          <br/>
+          <br/>
+          <br/>
+          
         </section>
-        <section>
+        <section id="projects"  style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
+          <br/>
+          <br/>
           <ProjectDet/>
         </section>
-        <section>
+        <section  id="skills">
+          <br/>
+          <br/>
+          <br/>
           <SkillExp/>
+          <br/>
+          <br/>
         </section>
-        <div className="py-2"></div>
-        <section>
+        <section  id="contact" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
+          <br/>
+          <br/>
+          <br/>
           <Contact/>
         </section>
-        <div className="py-4"></div>
-        <section>
+        <section style={{paddingTop:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
           <Footer/>
         </section>
       </div>

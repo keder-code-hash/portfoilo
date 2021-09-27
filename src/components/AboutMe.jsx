@@ -4,7 +4,7 @@ import "../SASS/aboutMe.scss"
 function CreateAboutMe(){
     return (
         <React.Fragment>
-            <div id="about" className="container col-xxl-10 py-4 px-2">
+            <div className="container col-xxl-10 py-4 px-2" style={{padding:'0px 0px 100px 100px'}}>
                 <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
                         <a style={{ backgroundColor:"inehrit"}}>
                         01. About Me
@@ -36,6 +36,9 @@ function CreateAboutMe(){
                         </div>
                     </div>
                 </div>
+                {/* <div className="row row-justify-content-center" style={{width:"100%",textAlign:"center"}}>
+                    
+                </div> */}
             </div>
         </React.Fragment>
     )

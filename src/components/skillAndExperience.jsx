@@ -237,7 +237,7 @@ function SkillExp() {
     
     return(
         <React.Fragment>
-            <div id="skills" className="container col-xxl-10 py-4 px-2">
+            <div className="container col-xxl-10 py-4 px-2">
                 <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
                         <a style={{ backgroundColor:"inehrit"}}>
                         03. Skills & Experiences
@@ -272,6 +272,9 @@ function SkillExp() {
                         <GenContainer containerName={container}/>
                     </div>
                 </div>
+                <br></br>
+                <br></br>
+                <br></br>
             </div>
         </React.Fragment>
     );   
