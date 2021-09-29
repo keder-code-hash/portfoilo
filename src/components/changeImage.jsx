@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import "../SASS/changeImage.scss"
 
 // const techList=['express.png','django-logo-big.jpg','Mysql_logo.png','React.jfif']
 class ChangeImage extends React.Component {
@@ -7,7 +7,7 @@ class ChangeImage extends React.Component {
     constructor(props){
         super(props);
         this.changeImage=this.changeImage.bind(this);
-        this.state={index:0,techList:['express.png','django-logo-big.jpg','Mysql_logo.png','React.jfif']}
+        this.state={index:0,techList:['express.png','django-logo-big.png','Mysql_logo.jpg','React.png']}
     }
 
     changeImage(params) {
@@ -20,15 +20,15 @@ class ChangeImage extends React.Component {
     }
 
     componentDidMount(){
-        setInterval(this.changeImage,3000);
+        setInterval(this.changeImage,2000);
     }
 
 
 
     render() { 
         return (
-            <div>
-                <img src={process.env.PUBLIC_URL+'Technologies/'+this.state.techList[this.state.index]} style={{height:'60%',width:'50%'}}></img>
+            <div className="mr-auto" style={{textAlign:'center'}}>
+                <img className="top" src={process.env.PUBLIC_URL+'Technologies/'+this.state.techList[this.state.index]} style={{height:'60%',width:'50%'}}></img>
             </div>
         );
     }

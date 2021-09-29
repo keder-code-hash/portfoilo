@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FormatAlignLeftIcon from '@mui/icons-material/FormatAlignCenter';
+import { SocialIcon } from 'react-social-icons';
 // import {Link} from 'react-router-dom'
 
 
@@ -14,28 +15,35 @@ function Navbar(){
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <li class="nav-item" style={{listStyleType:'none'}}>
-                            <a class="nav-link active" href="#LandingSection" >
-                                K 
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                    <div class="navbar-nav" style={{marginLeft:'auto',paddingRight:"5px"}}>
                         
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about" >About</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#projects" >Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills" >Skills</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#contact" >Contact</a>
-                        </li>
+                    <div class="navbar-nav" style={{paddingRight:"5px"}}>
+                        <ul className="navbar-nav mr-auto"> 
+                            <li class="nav-item" style={{listStyleType:'none'}}>
+                                <a class="nav-link active" href="#LandingSection" >
+                                    K 
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about" >About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects" >Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills" >Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact" >Contact</a>
+                            </li>
+                        </ul>
+                        
                     </div>
                 </div>
+                    <span style={{paddingRight:"1%",margin:"0px"}}><SocialIcon url="https://facebook.com/"/></span>
+                    <span style={{paddingRight:'1%',margin:"0px"}} ><SocialIcon url="https://github.com/"/></span>
+                    <span style={{paddingRight:'1%',margin:"0px"}} ><SocialIcon url="https://instagram.com/"/></span>
+                    <span style={{paddingRight:'1%',margin:"0px"}} ><img src={process.env.PUBLIC_URL+'gmail.png'} alt="gmail" srcset="" height="50px" width="50px"/></span>
                 </nav>
             </div>
         </React.Fragment>
