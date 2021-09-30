@@ -43,6 +43,7 @@ function Navbar(){
                     <span style={{paddingRight:"1%",margin:"0px"}}><SocialIcon url="https://facebook.com/"/></span>
                     <span style={{paddingRight:'1%',margin:"0px"}} ><SocialIcon url="https://github.com/"/></span>
                     <span style={{paddingRight:'1%',margin:"0px"}} ><SocialIcon url="https://instagram.com/"/></span>
+                    <span style={{paddingRight:'1%',margin:"0px"}} ><SocialIcon url="https://linkedin.com/"/></span>
                     <span style={{paddingRight:'1%',margin:"0px"}} ><img src={process.env.PUBLIC_URL+'gmail.png'} alt="gmail" srcset="" height="50px" width="50px"/></span>
                 </nav>
             </div>

@@ -20,7 +20,7 @@ class ChangeImage extends React.Component {
     }
 
     componentDidMount(){
-        setInterval(this.changeImage,2000);
+        setInterval(this.changeImage,3000);
     }
 
 
