@@ -37,7 +37,7 @@ function Contact(){
                     </div>
                     
                 </div>
-                <div className="row row-justify-content-center" style={{width:"100%",textAlign:"center"}}>
+                <div className="row row-justify-content-center" style={{width:"100%",textAlign:"center",paddingTop:"4%"}}>
                     {/* <div className="col-lg-2 col-sm-2 col-md-2 py-2 px-1" style={{marginLeft:'auto'}}> */}
                         <div className="buttonDiv">
                             <button className="cB" style={buttonStyle}>

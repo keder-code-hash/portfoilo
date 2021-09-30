@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React from 'react';
 import ChangeImage from './changeImage';
 
 
@@ -27,27 +27,25 @@ function Home(){
                                 <h3> Love to Solve Real life Problems </h3>
                                 <br/>
                             </p>
-                            {/* <div className="row">
-                                    <div className="col-lg-4 col-md-12 col-sm-12">
-                                        <h3 style={{marginTop:'1em',marginBottom:'1em'}}> have been worked on  </h3>
-                                    </div>
-                                    <div className="col-lg-4 col-md-12 col-sm-12" style={{margin:"0px"}}>
-                                        <ChangeImage/>
-                                    </div>
-                                </div>
-                            <br/>
-                            <br/> */}
-                            {/*  */}
                         </div>
                         
-                        <div className="order-lg-2 col-md-6 col-sm-10 col-lg-4">
-                            {/* <div className="p-0 m-0"> */}
-                                {/* <div className="imgBody ms-auto"> */}
-                                    <ChangeImage/>
-                                    
-                                {/* </div> */}
-                            {/* </div> */}
+                        <div className="wrapper order-lg-2 col-md-6 col-sm-10 col-lg-4">
+                            <ChangeImage/>
                         </div>
+                    </div>
+                    
+                    
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div style={{position:'absolute'}}>
+                        <span>
+                            <button id="btn" className="CV" style={{borderRadius:"20px",backgroundColor:"#00b1d480"}}>MY CV</button>
+                        </span>
+                        &nbsp;&nbsp;&nbsp;
+                        <span>
+                            <button id="btn" className="cont" style={{borderRadius:"20px",backgroundColor:"#00b1d480"}}>contact</button>
+                        </span>
                     </div>
                 </div>
             </div>
