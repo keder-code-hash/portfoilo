@@ -1,4 +1,3 @@
-import { display } from '@mui/system';
 import React, { useState } from 'react';
 import "../SASS/skill.scss"
 
