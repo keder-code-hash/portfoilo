@@ -1,13 +1,13 @@
 import React from 'react';
 import ChangeImage from './changeImage';
-
+import Fade from 'react-reveal/Fade';
 
 function Home(){
     
 
 
     return (
-        <React.Fragment>
+        <Fade cascade duration={2000}>
             <div className="container-fluid imgCont">
                 <div className="container col-xxl-8 px-2 py-5">
                     <div className="row align-items-center g-5 py-5 px-0">
@@ -49,8 +49,7 @@ function Home(){
                     </div>
                 </div>
             </div>
-            
-        </React.Fragment>
+        </Fade>
     )
 }
 

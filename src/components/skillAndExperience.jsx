@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import "../SASS/skill.scss"
-
+import Fade from 'react-reveal/Fade';
 
 //technologies,framework,language
 const FrontEnd=[
+    
     {
-        id:1,
+        id:3,
         name:"HTML",
         skillVal:80
     },
@@ -13,9 +14,8 @@ const FrontEnd=[
         id:2,
         name:"CSS",
         skillVal:50
-    },
-    {
-        id:3,
+    },{
+        id:1,
         name:"BOOTSTRAP",
         skillVal:80
     },
@@ -27,20 +27,21 @@ const FrontEnd=[
 ]
 //technologies,framework
 const Backend=[
+    
     {
-        id:5,
-        name:"NODEJS",
-        skillVal:70
-    },
-    {
-        id:6,
+        id:1,
         name:"DJANGO",
         skillVal:75
     },
     {
-        id:7,
+        id:2,
         name:"EXPRESS.JS(framework)",
         skillVal:80
+    },
+    {
+        id:3,
+        name:"NODEJS",
+        skillVal:70
     }
 ]
 const Languages=[
@@ -66,15 +67,15 @@ const Languages=[
     },
 ]
 const DataBases=[
-    {
-        id:11,
-        name:"SQL",
-        skillVal:85
-    },
+    
     {
         id:12,
         name:"NOSQL",
         skillVal:75
+    },{
+        id:11,
+        name:"SQL",
+        skillVal:85
     },
 ]
 
@@ -102,28 +103,30 @@ function GenerateCircle(val){
 }
 
 function GenCardComp(props) {
-    const content = props.skills.map((skill) =>
-        <div className="col-lg-4 col-md-4 col-xl-3 py-2 px-2" key={skill.id}>
-            <div className="card px-0 py-0 skillCard">
-                <div className="card-body ">
-                    <div class="progress mx-auto" data-value='90'>
-                        <span class="progress-left" >
-                            <span class="progress-bar border-primary " style={GenerateCircle(skill.skillVal)[0]}></span>
-                        </span>
-                        <span class="progress-right">
-                            <span class="progress-bar border-primary " style={GenerateCircle(skill.skillVal)[1]}></span>
-                        </span>
-                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                            <div class="h2 font-weight-bold">{skill.skillVal}%</div>
+    const content = props.skills.map((skill,index) =>
+        <Fade left duration={700+(500*(index+2))}>
+            <div className="col-lg-4 col-md-4 col-xl-3 py-2 px-2" key={skill.id}>
+                <div className="card px-0 py-0 skillCard">
+                    <div className="card-body ">
+                        <div class="progress mx-auto" data-value='90'>
+                            <span class="progress-left" >
+                                <span class="progress-bar border-primary " style={GenerateCircle(skill.skillVal)[0]}></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar border-primary " style={GenerateCircle(skill.skillVal)[1]}></span>
+                            </span>
+                            <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="h2 font-weight-bold">{skill.skillVal}%</div>
+                            </div>
                         </div>
+                        <br></br>
+                        <p className="display-5 lead text-center">
+                            {skill.name}
+                        </p>
                     </div>
-                    <br></br>
-                    <p className="display-5 lead text-center">
-                        {skill.name}
-                    </p>
                 </div>
             </div>
-        </div>
+        </Fade>
     );
     return (
       <div className="row py-2">
@@ -235,6 +238,7 @@ function SkillExp() {
 
     
     return(
+        <Fade duration={800}>
         <React.Fragment>
             <div className="container col-xxl-10 py-4 px-2">
                 <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
@@ -265,17 +269,20 @@ function SkillExp() {
                         </span>
                     </div>
                 </div>
-                <div className="row row-justify-content-center" style={{width:"100%",textAlign:"center"}}>
-                    <div className="col-lg-12 col-md-12 col-sm-12">
-                        <br></br> 
-                        <GenContainer containerName={container}/>
+                <Fade cascade duration={1000}>
+                    <div className="row row-justify-content-center" style={{width:"100%",textAlign:"center"}}>
+                        <div className="col-lg-12 col-md-12 col-sm-12">
+                            <br></br> 
+                            <GenContainer containerName={container}/>
+                        </div>
                     </div>
-                </div>
+                </Fade>
                 <br></br>
                 <br></br>
                 <br></br>
             </div>
         </React.Fragment>
+        </Fade>
     );   
 }
 

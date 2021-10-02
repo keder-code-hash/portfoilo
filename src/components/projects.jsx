@@ -1,6 +1,6 @@
 import React from 'react';
 import '../SASS/projectCard.scss'
-
+import Fade from'react-reveal/Fade'
 
 const proj=[
     {
@@ -35,27 +35,28 @@ function NumberList(props) {
 
 function Cards(props) {
     const content = props.projs.map((post) =>
-        <div className="row justify-content-center py-4 px-2">
-            <div className="offset-lg-4 col-lg-8 col-md-6 col-sm-8 p-0 m-0" style={{alignItems:"center"}}>
-                <div class="blog-card py-0">
-                    <div class="meta">
-                        <div class="photo" style={{ backgroundImage: "url(/"+post.project_image+")" }}></div>
-                    </div>
-                    <div class="description">
-                        <h1>{post.project_name}</h1>
-                        <br></br>
-                        <h2>{post.project_type}</h2>
-                        <p> {post.Project_small_desc}</p>
-                        <br></br>
-                        <NumberList tags={post.project_tags}/>
-                        <p class="read-more">
-                            <a href={post.project_url}><em>Explore</em></a>
-                        </p>
+        <Fade up duration={1500}>
+            <div className="row justify-content-center py-4 px-2">
+                <div className="offset-lg-4 col-lg-8 col-md-6 col-sm-8 p-0 m-0" style={{alignItems:"center"}}>
+                    <div class="blog-card py-0">
+                        <div class="meta">
+                            <div class="photo" style={{ backgroundImage: "url(/"+post.project_image+")" }}></div>
+                        </div>
+                        <div class="description">
+                            <h1>{post.project_name}</h1>
+                            <br></br>
+                            <h2>{post.project_type}</h2>
+                            <p> {post.Project_small_desc}</p>
+                            <br></br>
+                            <NumberList tags={post.project_tags}/>
+                            <p class="read-more">
+                                <a href={post.project_url}><em>Explore</em></a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </Fade>
 
     );
     return (
@@ -69,17 +70,22 @@ function Cards(props) {
   
 function ProjectDet(){
     return(
-        <React.Fragment>
-            <div className="container col-xxl-10 px-2 py-5">
-                <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
-                    <a>
-                       02. My Projects
-                       <div className="dividor"></div>
-                    </a>
-                </h1>
-                <Cards projs={proj}/>
-            </div>
-        </React.Fragment>
+        <div data-aos="fade-down" 
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        data-aos-anchor-placement="top-center">
+            <React.Fragment>
+                <div className="container col-xxl-10 px-2 py-5">
+                    <h1 className="text-start display-5" style={{ textTransform: "uppercase",borderRadius: "25px"}} >
+                        <a>
+                        02. My Projects
+                        <div className="dividor"></div>
+                        </a>
+                    </h1>
+                    <Cards projs={proj}/>
+                </div>
+            </React.Fragment>
+        </div>
     )
 }
 

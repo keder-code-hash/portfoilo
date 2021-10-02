@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 // import {Link} from 'react-router-dom'
 
 
 function Navbar(){
     return(
-        <React.Fragment>
+        
+         <React.Fragment>
             <div className="container-fluid navContainer">
                 <nav class="navbar navbar-expand-lg">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,6 +81,7 @@ function Navbar(){
                 </nav>
             </div>
         </React.Fragment>
+        
     )
 }
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "../SASS/aboutMe.scss"
+import Zoom from 'react-reveal/Zoom';
+
 
 function CreateAboutMe(){
     return (
@@ -28,11 +30,13 @@ function CreateAboutMe(){
                     </div>
                     <div className="col-lg-4 col-sm-4 col-sm-4 order-2 imgCol">
                         <div id="sh" className="shadow px-0 py-0">
-                            <picture>
-                                <source media="(min-width:650px)" srcset="https://storage.pixteller.com/designs/designs-images/2017-09-20/08/twitter-profile-picture-avatar-1-59c1f99ecca45.png"/>
-                                <source media="(min-width:465px)" srcset={process.env.PUBLIC_URL+'myImage.jpg'}/>
-                                <img src="https://storage.pixteller.com/designs/designs-images/2017-09-20/08/twitter-profile-picture-avatar-1-59c1f99ecca45.png" alt="Flowers"/>
-                            </picture>
+                                <picture>
+                                    <source media="(min-width:650px)" srcset="https://storage.pixteller.com/designs/designs-images/2017-09-20/08/twitter-profile-picture-avatar-1-59c1f99ecca45.png"/>
+                                    <source media="(min-width:465px)" srcset={process.env.PUBLIC_URL+'myImage.jpg'}/>
+                                    <Zoom>
+                                            <img src="https://storage.pixteller.com/designs/designs-images/2017-09-20/08/twitter-profile-picture-avatar-1-59c1f99ecca45.png" alt="Flowers"/>
+                                    </Zoom>
+                                </picture>
                         </div>
                     </div>
                 </div>
