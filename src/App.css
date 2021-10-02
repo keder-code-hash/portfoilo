@@ -58,7 +58,7 @@ body {
   font-weight: 700;
   font-size: large;
   float: inline-start;
-  
+  width: -moz-available;
   size: 10%;
 }
 
