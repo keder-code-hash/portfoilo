@@ -40,9 +40,11 @@ function Contact(){
                 <div className="row row-justify-content-center" style={{width:"100%",textAlign:"center",paddingTop:"4%"}}>
                     {/* <div className="col-lg-2 col-sm-2 col-md-2 py-2 px-1" style={{marginLeft:'auto'}}> */}
                         <div className="buttonDiv">
+                                <a href="mailto:kedernath.mallick.tint022@gmail.com" target="_blank" rel="noreferrer">
                             <button className="cB" style={buttonStyle}>
-                                Contact
+                                    Contact
                             </button>
+                                </a>
                         </div>
                         
                     {/* </div> */}
