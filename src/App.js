@@ -16,32 +16,37 @@ function App() {
       <div className="App">
           <Navbar/> 
           <br/>
-          <section id="LandingSection" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
-            <Home/>
-          </section>
-        
-        <Fade duration={1000}>
-          <section  id="about" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
-            <br/>
-            <br/>
-            <br/>
-            <CreateAboutMe/>
-            <br/>
-            <br/>
-            <br/>
-            
-          </section>
-        </Fade>
 
-        <Fade duration={100}>
+          <div data-aos="fade-down"  data-aos-easing="linear" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+            <section id="LandingSection" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
+              <Home/>
+            </section> 
+          </div>
+
+          {/* <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-anchor-placement="center-center"> */}
+            <section  id="about" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
+              <br/>
+              <br/>
+              <CreateAboutMe/>
+              <br/>
+              <br/>
+              <br/>
+              
+            </section>
+          {/* </div> */}
+
+        
+        <div data-aos="fade-down" 
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="top-center">
           <section id="projects"  style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
-            <br/>
             <br/>
             <ProjectDet/>
           </section>
-        </Fade>
+        </div>
 
-        <Fade duration={1000}>
+        <div data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-easing="linear" data-aos-duration="800">
           <section  id="skills">
             <br/>
             <br/>
@@ -50,14 +55,19 @@ function App() {
             <br/>
             <br/>
           </section>
-        </Fade>
+        </div>
 
-        <section  id="contact" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
-          <br/>
-          <br/>
-          <br/>
-          <Contact/>
-        </section>
+        <div data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-easing="linear" data-aos-duration="800">
+          <section  id="contact" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
+            <br/>
+            <br/>
+            <br/>
+            <Contact/>
+          </section>
+        </div>
+
+
+        
         <section style={{paddingTop:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
           <Footer/>
         </section>

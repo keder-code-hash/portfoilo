@@ -71,8 +71,8 @@ body {
   padding: 4px;
   margin: 1px;
   padding-top:0px;
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
+  /* animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1; */
 }
 @keyframes fadeInAnimation {
   0% {
