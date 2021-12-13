@@ -34,10 +34,10 @@ function CreateAboutMe(){
                         <div className="col-lg-4 col-sm-4 col-sm-4 order-2 imgCol">
                             <div id="sh" className="shadow px-0 py-0">
                                     <picture>
-                                        <source media="(min-width:650px)" srcset="https://storage.pixteller.com/designs/designs-images/2017-09-20/08/twitter-profile-picture-avatar-1-59c1f99ecca45.png"/>
-                                        <source media="(min-width:465px)" srcset={process.env.PUBLIC_URL+'myImage.jpg'}/>
+                                        <source media="(min-width:650px)" srcset="https://res.cloudinary.com/dvcjj1k7a/image/upload/v1637041151/profile_ghmeps.jpg"/>
+                                        <source media="(min-width:465px)" srcset={process.env.PUBLIC_URL+'profile.jpg'}/>
                                         <Zoom>
-                                                <img src="https://storage.pixteller.com/designs/designs-images/2017-09-20/08/twitter-profile-picture-avatar-1-59c1f99ecca45.png" alt="Flowers"/>
+                                                <img src="https://res.cloudinary.com/dvcjj1k7a/image/upload/v1637041151/profile_ghmeps.jpg" alt="keder"/>
                                         </Zoom>
                                     </picture>
                             </div>
