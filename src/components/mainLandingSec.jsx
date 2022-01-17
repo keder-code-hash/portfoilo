@@ -8,9 +8,8 @@ function Home(){
             <div className="container px-2 py-5">
                 {/* <div className="row align-items-center g-5 py-5 px-0"> */}
                     <div className="order-lg-1 col-md-auto col-lg-auto text-center">
-                        <h1 className="fw-bold lh-1 mb-3 align-items-center display-4 " >
-                            Hii 👋,
-                        <br />
+                        <h1 className="fw-bold lh-1 mb-3 align-items-center display-4 " > 
+                            Hii,
                             I am 
                         <br/>
                             Keder Nath Mallick

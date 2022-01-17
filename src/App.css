@@ -39,7 +39,7 @@ body {
 .navbar{
     /* background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%); */
 
-  background-color:#03a9f429;
+  /* background-color:#03a9f429; */
   /* box-shadow: 0 10px 30px -10px var(--navy-shadow); */
   backdrop-filter: blur(20px);
   border-radius: 20px;
@@ -248,3 +248,22 @@ section img {
    transform: scaleY(0);
 }
 }
+
+
+h1{
+  background-image: linear-gradient(90deg,var(--orange),var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2,h3,h4{
+  color: #fff;
+}
+
+.bgimg-1{
+  position: relative; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+

@@ -14,23 +14,23 @@ AOS.init();
 function App() {
   return (
       <div className="App">
-          <Navbar/> 
-          <br/>
-
+        <div className='bgimg-1' style={{backgroundImage: "url(/"+"landing/"+"fabrice-nerfin-puHQJZd3MDg-unsplash.jpg"+")",paddingBottom:'10%' }}>
+          <Navbar/>   
           <div data-aos="fade-down"  data-aos-easing="linear" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
-            <section id="LandingSection" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
+            <section id="LandingSection" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}} >
               <Home/>
             </section> 
           </div>
+        </div>
  
-            <section  id="about" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
-              <br/>
-              <br/>
-              <CreateAboutMe/>
-              <br/>
-              <br/>
-              <br/>
-            </section> 
+        <section  id="about" style={{paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
+          <br/>
+          <br/>
+          <CreateAboutMe/>
+          <br/>
+          <br/>
+          <br/>
+        </section> 
 
         
         <div data-aos="fade-down" 
