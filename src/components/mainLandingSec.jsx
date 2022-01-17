@@ -17,9 +17,9 @@ function Home(){
                         </h1>
                         <br/>
                         <p className="lead">
-                            <h3> Like to Build Things In A <span className='style_para'>responsive way </span></h3>
+                            <h3> Like to Build Things In A <span className='style_para' >responsive way </span></h3>
                             <br/>
-                            <h3> Love to <span className='style_para'>Solve Real life Problems</span> </h3>
+                            <h3> Love to <span className='style_para' >Solve Real life Problems</span> </h3>
                             <br/>
                         </p>
                     </div>

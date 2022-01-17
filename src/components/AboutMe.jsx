@@ -27,7 +27,7 @@ function CreateAboutMe(){
                             </p>
                             <p className="lead">
                                 <span className='style_para'>Well-organized
-                                </span>,<span className='style_para'>hardworking</span> person with depth knowledge about Web-Development and 
+                                </span>,<span className='style_para' >hardworking</span> person with depth knowledge about Web-Development and 
                                 still learning.Love to do work in a group.<br/>
                                 Currently,I am trying to explore Machine Learning and web 3.0 . 
                             </p>
