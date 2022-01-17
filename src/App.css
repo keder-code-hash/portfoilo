@@ -8,6 +8,7 @@ div#root {
   width: 100% !important;
 }
 .App{
+  overflow: auto;
   width: 100%;
 }
 body {
@@ -66,8 +67,7 @@ body {
 
 } */
 
-.navContainer {
-  position: fixed;
+.navContainer { 
   top: 0;
   right: 0;
   left: 0;
@@ -171,4 +171,80 @@ section img {
 	100% {
 		opacity: 0;
 	}
+}
+
+
+
+/* underline text style */
+
+.style_para{
+  font-size: 1.5rem;
+  color: black;
+  padding: 2px 0px 1px;
+  background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(0, 255, 0, 0.35) calc(50% - 9px), rgba(0, 255, 0, 0.35) 100%);
+  transition: background-position 120ms ease-in-out 0s, padding 120ms ease-in-out 0s;
+  background-size: 140% 210%;
+  background-position: 0px 0px;
+  word-break: break-word;
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+.style_para:after,.style_para:before {
+ content: '';
+ display: block;
+ position: absolute;
+ left: -0.125em;
+ right: -0.125em;
+ z-index: -1;
+}
+.style_para:before {
+ background-color: rgba(0, 0, 0, 0.9);
+ bottom: -0.0625em;
+ height: 1px;
+}
+.style_para:after {
+ background-color: #00ff0059;
+ animation: linkUnderlineOut 0.3s forwards;
+ top: 0;
+ bottom: 0;
+ height: 100%;
+ transform-origin: bottom left;
+ transform: scaleY(0);
+}
+.style_para:hover {
+ color: rgb(0, 0, 0);
+}
+.style_para:hover:before {
+ background-color: #00ff0059;
+}
+.style_para:hover:after {
+ animation: linkUnderlineIn 0.3s forwards;
+}
+@keyframes linkUnderlineIn {
+ 0% {
+   transform: scaleY(0);
+}
+ 50% {
+   transform: scaleY(1.1);
+}
+ 63% {
+   transform: scaleY(0.9);
+}
+ 88% {
+   transform: scaleY(1.05);
+}
+ 100% {
+   transform: scaleY(1);
+}
+}
+@keyframes linkUnderlineOut {
+ 0% {
+   transform: scaleY(1);
+}
+ 100% {
+   transform: scaleY(0);
+}
 }

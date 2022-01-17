@@ -26,26 +26,24 @@ function CreateAboutMe(){
                                 I am pretty much interested in Web-Development preferably at Backend.
                             </p>
                             <p className="lead">
-                                <mark style={{borderRadius:"15px",backgroundColor:"lightblue"}}>Well-organized,hardworking</mark> person with depth knowledge about Web-Development and 
+                                <span className='style_para'>Well-organized
+                                </span>,<span className='style_para'>hardworking</span> person with depth knowledge about Web-Development and 
                                 still learning.Love to do work in a group.<br/>
                                 Currently,I am trying to explore Machine Learning and web 3.0 . 
                             </p>
                         </div>
                         <div className="col-lg-4 col-sm-4 col-sm-4 order-2 imgCol">
                             <div id="sh" className="shadow px-0 py-0">
-                                    <picture>
-                                        <source media="(min-width:650px)" srcset="https://res.cloudinary.com/dvcjj1k7a/image/upload/v1637041151/profile_ghmeps.jpg"/>
-                                        <source media="(min-width:465px)" srcset={process.env.PUBLIC_URL+'profile.jpg'}/>
-                                        <Zoom>
-                                                <img src="https://res.cloudinary.com/dvcjj1k7a/image/upload/v1637041151/profile_ghmeps.jpg" alt="keder"/>
-                                        </Zoom>
-                                    </picture>
+                                <picture>
+                                    <source media="(min-width:650px)" srcset="https://res.cloudinary.com/dvcjj1k7a/image/upload/v1637041151/profile_ghmeps.jpg"/>
+                                    <source media="(min-width:465px)" srcset={process.env.PUBLIC_URL+'profile.jpg'}/>
+                                    <Zoom>
+                                        <img src="https://res.cloudinary.com/dvcjj1k7a/image/upload/v1637041151/profile_ghmeps.jpg" alt="keder"/>
+                                    </Zoom>
+                                </picture>
                             </div>
                         </div>
-                    </div>
-                    {/* <div className="row row-justify-content-center" style={{width:"100%",textAlign:"center"}}>
-                        
-                    </div> */}
+                    </div> 
                 </div>
             </React.Fragment>
         </div>
