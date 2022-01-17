@@ -8,7 +8,7 @@ div#root {
   width: 100% !important;
 }
 .App{
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
 }
 body {

@@ -20,6 +20,24 @@ const proj=[
         project_image:"first.jpg",
         project_tags:['JS','HTML','Bootstrap','CSS'],
         Project_small_desc:"A simple web extension.It can tell you a funny joke and save you from a tedious works."
+    },
+    {
+        project_id:3,
+        project_name:"TwitterFetch",
+        project_type:"API",
+        project_url:"https://rapidapi.com/kedernath.mallick.tint022@gmail.com/api/twitterfetch",
+        project_image:"twitter.jpg",
+        project_tags:['JS','TwitterAPI','Node'],
+        Project_small_desc:"fetch some tweets easily based on some parameters."
+    },
+    {
+        project_id:4,
+        project_name:"GitScrapper",
+        project_type:"API",
+        project_url:"https://rapidapi.com/kedernath.mallick.tint022@gmail.com/api/GitScrapper",
+        project_image:"git.jpg",
+        project_tags:['JS','GitHubAPI','Node'],
+        Project_small_desc:"Scrap some github data very easily."
     }
 ]
 
@@ -37,7 +55,7 @@ function Cards(props) {
     const content = props.projs.map((post) =>
             <div className="row justify-content-center py-4 px-2">
                 <div className="offset-lg-4 col-lg-8 col-md-6 col-sm-8 p-0 m-0" style={{alignItems:"center"}}>
-                    <div class="blog-card py-0">
+                    <div class="blog-card py-0" style={{ width:"inherit" }}>
                         <div class="meta">
                             <div class="photo" style={{ backgroundImage: "url(/"+post.project_image+")" }}></div>
                         </div>
@@ -58,7 +76,7 @@ function Cards(props) {
 
     );
     return (
-      <div className="container-fluid mx-3 px-0 py-2 rowParent">
+      <div className="container-fluid rowParent">
         {content}
       </div>
     );

@@ -22,8 +22,7 @@ function App() {
               <Home/>
             </section> 
           </div>
-
-          {/* <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-anchor-placement="center-center"> */}
+ 
             <section  id="about" style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
               <br/>
               <br/>
@@ -31,26 +30,21 @@ function App() {
               <br/>
               <br/>
               <br/>
-              
-            </section>
-          {/* </div> */}
+            </section> 
 
         
         <div data-aos="fade-down" 
         data-aos-easing="linear"
-        data-aos-duration="1000"
+        data-aos-duration="800"
         data-aos-anchor-placement="top-center">
-          <section id="projects"  style={{paddingTop:'100px',paddingBottom:'100px',paddingLeft:'0px',paddingRight:'0px'}}>
+          <section id="projects"  style={{paddingTop:'100px',paddingBottom:'50px',paddingLeft:'0px',paddingRight:'0px'}}>
             <br/>
             <ProjectDet/>
           </section>
         </div>
 
         <div data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-easing="linear" data-aos-duration="800">
-          <section  id="skills">
-            <br/>
-            <br/>
-            <br/>
+          <section  id="skills"> 
             <SkillExp/>
             <br/>
             <br/>
