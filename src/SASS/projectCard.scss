@@ -19,7 +19,7 @@ ul.projTag{
   margin: 1rem auto;
   // box-shadow: 0 3px 7px -1px #00000094;
   margin-bottom: 1.6%;
-  background: $color_cont;
+  background: #f7a99c;
   line-height: 1.4;
   // font-family: sans-serif;
   border-radius: 5px;
@@ -110,7 +110,7 @@ ul.projTag{
 
 
   @media (min-width: 640px) {
-    padding: 5px;
+    padding: 4px;
     flex-direction: row;
     max-width: 700px;
     .meta {
@@ -122,7 +122,7 @@ ul.projTag{
       &:before {
         transform: skewX(-3deg);
         content: "";
-        background: #fff;
+        background: rgb(245, 227, 227);
         width: 30px;
         position: absolute;
         left: -10px;

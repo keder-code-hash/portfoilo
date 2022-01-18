@@ -1,0 +1,55 @@
+$first_button_color:#fa8142;
+$second_button_color: #09c372; 
+
+#btn1{
+    color: azure;
+    border-radius: 5px; 
+    padding: .5rem 2rem;
+    background-color: inherit;
+    border: 2px solid $first_button_color;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 200;
+    transition: all 0.4s cubic-bezier(1,-0.16,.6,1.35);
+  }
+  
+  
+  #btn1:hover{
+    transform: translateY(-2px);
+    background-color: $first_button_color;
+    color: white;
+    font-weight: 400!important;
+    cursor: pointer;
+  }
+  
+  #btn1:active, #btn:focus{ 
+    outline: none;
+    border: none;
+  }
+
+
+  #btn2{
+    color: azure;
+    border-radius: 5px; 
+    padding: .5rem 2rem;
+    background-color: inherit;
+    border: 2px solid $second_button_color;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 200;
+    transition: all 0.4s cubic-bezier(1,-0.16,.6,1.35);
+  }
+  
+  
+  #btn2:hover{
+    transform: translateY(-2px);
+    background-color: $second_button_color;
+    color: white;
+    font-weight: 400!important;
+    cursor: pointer;
+  }
+  
+  #btn2:active, #btn2:focus{ 
+    outline: none;
+    border: none;
+  }

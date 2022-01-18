@@ -32,12 +32,12 @@ function Home(){
                 <div className='text-center'>
                 <div data-aos="fade-up" data-aos-duration="800" >
                     <span>
-                        <button href="#contact" id="btn" className="CV" style={{borderRadius:"20px",backgroundColor:"#00b1d480"}}>MY CV</button>
+                        <button href="#contact" id="btn1">CV</button>
                     </span>
                 &nbsp;&nbsp;&nbsp;
                 <span>
                     <a href="#contact" style={{color:"#000000"}}>
-                        <button id="btn" className="cont" style={{borderRadius:"20px",backgroundColor:"#00b1d480"}}>contact</button>
+                        <button id="btn2">CONTACT</button>
                     </a>
                 </span>
                 </div>

@@ -4,7 +4,8 @@ import "../SASS/contact.scss"
 
 
 const buttonStyle={
-    color:'#b2becd'
+    color:'white'
+    
 }
 function Contact(){
     return(
