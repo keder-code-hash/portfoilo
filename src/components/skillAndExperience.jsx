@@ -110,10 +110,10 @@ function GenCardComp(props) {
                     <div className="card-body ">
                         <div class="progress mx-auto" data-value='90'>
                             <span class="progress-left" >
-                                <span class="progress-bar border-primary " style={GenerateCircle(skill.skillVal)[0]}></span>
+                                <span class="progress-bar border-primary" style={GenerateCircle(skill.skillVal)[0]}></span>
                             </span>
                             <span class="progress-right">
-                                <span class="progress-bar border-primary " style={GenerateCircle(skill.skillVal)[1]}></span>
+                                <span class="progress-bar border-primary" style={GenerateCircle(skill.skillVal)[1]}></span>
                             </span>
                             <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
                                 <div class="h2 font-weight-bold">{skill.skillVal}%</div>

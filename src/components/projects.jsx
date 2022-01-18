@@ -44,10 +44,10 @@ const proj=[
 function NumberList(props) {
     const numbers = props.tags;
     const listItems = numbers.map((number) =>
-      <li>{number}</li>
+      <li >{number}</li>
     );
     return (
-      <ul className="projTag">{listItems}</ul>
+      <ul className="projTag" >{listItems}</ul>
     );
   }
 

@@ -4,13 +4,7 @@ import "../SASS/contact.scss"
 
 
 const buttonStyle={
-    // backgroundColor:'#eb00ff',
-    borderRadius:'10px',
-    padding: '15px 32px',
-    textAlign: 'center',
-    textDecoration: 'none',
-    display: 'inline-block',
-    fontSize: '16px',
+    color:'#b2becd'
 }
 function Contact(){
     return(
@@ -42,7 +36,7 @@ function Contact(){
                         <div className="buttonDiv">
                             <div data-aos="fade-up" data-aos-duration="800">
                                 <a href="mailto:kedernath.mallick.tint022@gmail.com" target="_blank" rel="noreferrer">
-                                    <button className="cB" style={buttonStyle}>
+                                    <button id='btn' style={buttonStyle}>
                                             Contact
                                     </button>
                                 </a>

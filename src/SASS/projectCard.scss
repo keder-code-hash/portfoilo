@@ -12,11 +12,12 @@ ul.projTag{
   padding: 5px;
 }
 .blog-card {
+  color: #2a2e35;
   float: left;
   display: flex;
   flex-direction: column;
   margin: 1rem auto;
-  box-shadow: 0 3px 7px -1px #00000094;
+  // box-shadow: 0 3px 7px -1px #00000094;
   margin-bottom: 1.6%;
   background: $color_cont;
   line-height: 1.4;
@@ -52,34 +53,31 @@ ul.projTag{
   
   .description {
     padding: 2rem;
-    background: $color_cont;
+    background: #2a2e35;
     position: relative;
-    z-index: 1;
-    h1,
-    h2 {
-      // font-family: Poppins, sans-serif;
-    }
+    z-index: 1; 
     h1 {
       line-height: 1;
       margin: 0;
       font-size: 1.7rem;
     }
     h2 {
+      font-family: Poppins, sans-serif;
       font-size: 1rem;
       font-weight: 300;
       text-transform: uppercase;
-      color: $color_grey_dark;
+      color: #09c372;
       margin-top: 5px;
     }
     .read-more {
       text-align: right;
       a {
-        color: $color_prime;
+        color: #cbff86;
         display: inline-block;
         position: relative;
         &:after {
           content: "\f061";
-          // font-family: FontAwesome;
+          font-family: FontAwesome;
           margin-left: -10px;
           opacity: 0;
           vertical-align: middle;
@@ -153,6 +151,6 @@ ul.projTag{
 .dividor{
   flex: 1;
   height: 3px;
-  background-color: #000;
+  background-color:#2a2e35;
 }
 
