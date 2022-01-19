@@ -39,26 +39,30 @@ body {
 .navbar{
     /* background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%); */
 
-  /* background-color:#03a9f429; */
+  background-color:#2a2e35;
   /* box-shadow: 0 10px 30px -10px var(--navy-shadow); */
   /* backdrop-filter: blur(1px); */
-  border-radius: 20px;
+  /* border-radius: 20px; */
   /* margin-top: 1px; */
-  margin-left: 1px;
+  /* margin-left: 1px;
   margin-right: 1px;
   padding-left: 1px;
-  padding-right: 1px;
+  padding-right: 1px; */
 
   height: 10%;
-
+  padding-left: 0px!important;
+  margin-left:0px!important;
   font-weight: 700;
   font-size: large;
-  float: inline-start;
+  /* float: inline-start;
   width: -moz-available;
-  size: 10%;
+  size: 10%; */
 }
 
-
+.container-fluid.navContainer {
+  padding: 0px!important;
+  margin: 0px!important;
+}
 
 
 /* .navContainer{
@@ -91,14 +95,17 @@ body {
   margin-right: 1px;
   margin-left:2px
 }
-
+.nav-item span{
+  color: rgb(194, 209, 209);
+}
 .nav-item a{
-  color: #3f00ff;
+  font-size: larger;
+  color: #b2becd;
   text-decoration:wavy;
   background-color: transparent;
 }
 .navbar-nav{
-  padding-left: 15px !important;
+  /* padding-left: 15px !important; */
 }
 
  
@@ -271,3 +278,4 @@ ul.projTag {
 }
 
  
+
