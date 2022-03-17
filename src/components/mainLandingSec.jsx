@@ -32,7 +32,7 @@ function Home(){
                 <div className='text-center'>
                 <div data-aos="fade-up" data-aos-duration="800" >
                     <span>
-                        <a href="https://drive.google.com/file/d/1hMzKwnKs7SM8urVC11sWnoKB6IYIwELe/view?usp=sharing">
+                        <a href="https://drive.google.com/file/d/10sdJvBMeW4GcO6dy4a1Lt5wc1zUX8EhU/view?usp=sharing">
                             <button id="btn1">CV</button>
                         </a>
                     </span>
